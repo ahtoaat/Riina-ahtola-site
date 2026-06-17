@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
 import { siteContent } from '@/content/content'
@@ -31,6 +31,13 @@ export const metadata: Metadata = {
     description: siteContent.meta.description,
   },
   robots: { index: true, follow: true },
+}
+
+export const viewport: Viewport = {
+  width:        'device-width',
+  initialScale: 1,
+  // Prevents iOS from scaling up when inputs are focused (handled via text-base in inputs)
+  maximumScale: 5,
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
