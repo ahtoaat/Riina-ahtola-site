@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Google Fonts fallback (loaded via next/font in layout.tsx) ─────────── */
+:root {
+  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-inter:    'Inter', system-ui, sans-serif;
+}
+
+/* ── Smooth scrolling ───────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Base body ──────────────────────────────────────────────────────────── */
+body {
+  @apply bg-warm-white text-charcoal-800 font-sans antialiased;
+}
+
+/* ── Selection ──────────────────────────────────────────────────────────── */
+::selection {
+  @apply bg-sand-300 text-charcoal-900;
+}
+
+/* ── Custom scrollbar ───────────────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 5px; }
+::-webkit-scrollbar-track  { @apply bg-warm-50; }
+::-webkit-scrollbar-thumb  { @apply bg-sand-300 rounded-full; }
+
+/* ── Utility: fade-up animation (hero entrance) ─────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+.animate-fade-up {
+  animation: fadeUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.animate-fade-up-delay-1 { animation-delay: 0.20s; }
+.animate-fade-up-delay-2 { animation-delay: 0.40s; }
+.animate-fade-up-delay-3 { animation-delay: 0.60s; }
+.animate-fade-up-delay-4 { animation-delay: 0.80s; }
+
+/* ── Grain texture overlay ──────────────────────────────────────────────── */
+/* Adds a subtle editorial paper grain to the whole site */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9990;
+  opacity: 0.032;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
+
+/* ── Section line accent (drawn on scroll via JS class) ─────────────────── */
+.line-reveal {
+  display: block;
+  height: 1px;
+  background: currentColor;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.line-reveal.revealed {
+  transform: scaleX(1);
+}
