@@ -185,7 +185,7 @@ export const siteContent = {
   book: {
     eyebrow:  'Kirja',
     title:    'Idylli',
-    subtitle: 'Riinan kirjoittama kirja',
+    subtitle: 'Riina Ahtola',
     // Edit the paragraphs below to describe the book
     paragraphs: [
       'Pihatien sora rapisee jalkojen alla, ympärillä kukkivat omenapuut ja jäkälän kuvioimat kiviportaat kannustavat ottamaan askeleen ylöspäin. Syvän punaiseksi maalatut pariovet avautuvat, kutsuen käymään peremmälle.',
@@ -194,7 +194,7 @@ export const siteContent = {
       'Kirjan takana olevia Riina Ahtolaa ja Kati Pilli-Sihvolaa yhdistää rakkaus maaseutuun ja sen koteihin, jotka kauneuden lisäksi lumoavat eletyn elämän tarinoillaan.',
     ],
     // Update these when the book is available for purchase
-    cta: { label: 'Lue lisää', href: '#contact' },
+    cta: { label: 'Kustantajan verkkokauppa', href: 'https://www.bemycozy.com/product/idylli-maaseutukoteja/' },
   },
 
   // ── Footer ────────────────────────────────────────────────────────────────

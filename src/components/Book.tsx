@@ -97,6 +97,8 @@ export default function Book() {
             <Reveal delay={500}>
               <a
                 href={cta.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 font-sans text-sm tracking-widest uppercase text-charcoal-900 hover:text-accent transition-colors duration-300 group"
               >
                 {cta.label}
