@@ -110,16 +110,15 @@ export default function Contact() {
           <Reveal direction="right" delay={150}>
             <div className="flex flex-col gap-6">
 
-              {/* Kuva — pystysuora */}
-              <div className="relative w-full aspect-[2/3] overflow-hidden">
-                <Image
-                  src={sidebar.imageSrc}
-                  alt={sidebar.imageAlt}
-                  fill
-                  className="object-cover object-top"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-              </div>
+              {/* Kuva — näkyy kokonaan, ei rajauksia */}
+              <Image
+                src={sidebar.imageSrc}
+                alt={sidebar.imageAlt}
+                width={600}
+                height={800}
+                className="w-full h-auto"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
 
               {/* Y-tunnus */}
               <p className="font-sans text-xs tracking-widest uppercase text-warm-white/50">
