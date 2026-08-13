@@ -111,7 +111,7 @@ export default function Contact() {
             <div className="flex flex-col gap-6">
 
               {/* Kuva — pystysuora */}
-              <div className="relative w-full aspect-[3/4] overflow-hidden">
+              <div className="relative w-full aspect-[2/3] overflow-hidden">
                 <Image
                   src={sidebar.imageSrc}
                   alt={sidebar.imageAlt}
