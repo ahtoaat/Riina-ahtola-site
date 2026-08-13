@@ -188,8 +188,10 @@ export const siteContent = {
     subtitle: 'Riinan kirjoittama kirja',
     // Edit the paragraphs below to describe the book
     paragraphs: [
-      'Idylli on Riina Ahtolan kirjoittama kirja, joka vie lukijansa kauniiden kotien ja sisustuksen maailmaan.',
-      'Kirja tarjoaa inspiraatiota ja käytännön vinkkejä ajattoman kodin luomiseen pohjoismaisessa hengessä.',
+      'Pihatien sora rapisee jalkojen alla, ympärillä kukkivat omenapuut ja jäkälän kuvioimat kiviportaat kannustavat ottamaan askeleen ylöspäin. Syvän punaiseksi maalatut pariovet avautuvat, kutsuen käymään peremmälle.',
+      'Idylli – Maaseutukoteja vie sinne, missä pala maata on myös pala taivasta. Kaikki kirjan kymmenen perhettä ovat muuttaneet maalle, jossa on hyvä hengittää. Yhteistä on kaipuu lähelle luontoa ja tarve nähdä asiat uudella tavalla. Unohtaa kiireet, antaa rakkailleen enemmän tunteja, mahdollisuus rauhaan ja hiljaisuuteen.',
+      'Narisevat lautalattiat, tulta varjelevat pönttöuunit, elämää nähneet tiiliseinät sekä muu ihana ja alkuperäinen odottavat uskollista omistajaansa tyhjentyneissä hirsitaloissa, maatiloilla, herraskartanoissa tai kansakouluissa. Tämän matkan määränpäinä ovat Iitti, Kirkkonummi, Kitee, Mäntyharju, Numminen, Pirkanmaa, Raasepori, Rajamäki, Verla ja Yppäri.',
+      'Kirjan takana olevia Riina Ahtolaa ja Kati Pilli-Sihvolaa yhdistää rakkaus maaseutuun ja sen koteihin, jotka kauneuden lisäksi lumoavat eletyn elämän tarinoillaan.',
     ],
     // Update these when the book is available for purchase
     cta: { label: 'Lue lisää', href: '#contact' },
