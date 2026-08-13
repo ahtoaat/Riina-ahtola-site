@@ -140,12 +140,19 @@ export const siteContent = {
   contact: {
     eyebrow: 'Ota yhteyttä',
     title:   'Luodaan yhdessä\njotain kaunista',
-    subtitle: 'Teen töitä asunto- ja toimitilakohteissa ympäri Suomen ja kansainvälisesti.',
+    subtitle: '',
+    sidebar: {
+      imageSrc:     '/images/riina-contact.jpg', // vaihda oikeaksi kuvaksi
+      imageAlt:     'Riina Ahtola',
+      businessId:   '2493432-7',
+      instagramUrl: 'https://www.instagram.com/riinaahtola/',
+      linkedinUrl:  'https://fi.linkedin.com/in/riina-ahtola-b79b01176',
+    },
     details: {
-      email:     'riina@riinaahtoladesign.fi', // päivitä oikeaksi sähköpostiksi
-      phone:     '+358 40 123 4567',            // päivitä oikeaksi puhelinnumeroksi
-      instagram: '@riinaahtoladesign',          // päivitä oikeaksi käyttäjänimeksi
-      instagramUrl: 'https://instagram.com/riinaahtoladesign', // päivitä oikeaksi URL:ksi
+      email:     'riina@riinaahtoladesign.fi',
+      phone:     '+358 40 123 4567',
+      instagram: '@riinaahtoladesign',
+      instagramUrl: 'https://instagram.com/riinaahtoladesign',
     },
     form: {
       namePlaceholder:    'Nimesi',
@@ -200,7 +207,7 @@ export const siteContent = {
   // ── Footer ────────────────────────────────────────────────────────────────
   footer: {
     name:      'Riina Ahtola',
-    tagline:   'Sisustussuunnittelija — Helsinki, Suomi',
+    tagline:   'Helsinki',
     copyright: `© ${new Date().getFullYear()} Riina Ahtola. Kaikki oikeudet pidätetään.`,
     links: [
       { label: 'Portfolio',      href: '#portfolio' },
