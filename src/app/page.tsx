@@ -1,6 +1,5 @@
 import Navigation       from '@/components/Navigation'
 import Hero             from '@/components/Hero'
-import Marquee          from '@/components/Marquee'
 import About            from '@/components/About'
 import PortfolioPreview from '@/components/PortfolioPreview'
 import Portfolio        from '@/components/Portfolio'
@@ -12,7 +11,6 @@ export default function Home() {
     <main>
       <Navigation />
       <Hero />
-      <Marquee />
       <About />
       <PortfolioPreview />
       <Portfolio />
