@@ -28,11 +28,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-24 lg:py-36 px-6 lg:px-10 overflow-hidden relative"
-      style={{
-        backgroundColor: '#F0E8DC',
-        backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.06'/%3E%3C/svg%3E")`,
-      }}
+      className="bg-warm-white py-24 lg:py-36 px-6 lg:px-10 overflow-hidden relative"
     >
       <div className="max-w-7xl mx-auto">
 
@@ -54,17 +50,29 @@ export default function Services() {
             return (
               <Reveal key={i} delay={i * 110} direction="scale">
                 <div
-                  className="group cursor-default transition-all duration-500 hover:scale-[1.03] hover:z-10 relative"
+                  className="group cursor-default transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:z-10 relative"
                   style={{
                     transform: `rotate(${note.rotate}) translateY(${note.translateY})`,
                     transformOrigin: 'center center',
                   }}
+                  onMouseEnter={e => {
+                    (e.currentTarget as HTMLElement).style.transform = 'rotate(0deg) translateY(-12px) scale(1.03)'
+                  }}
+                  onMouseLeave={e => {
+                    (e.currentTarget as HTMLElement).style.transform = `rotate(${note.rotate}) translateY(${note.translateY})`
+                  }}
                 >
                   <div
-                    className="relative px-8 pt-4 pb-10 lg:px-10 lg:pb-12"
+                    className="relative px-8 pt-4 pb-10 lg:px-10 lg:pb-12 transition-shadow duration-700"
                     style={{
                       backgroundColor: note.bg,
-                      boxShadow: '4px 6px 20px rgba(0,0,0,0.14), 0 1px 3px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.6)',
+                      boxShadow: '4px 6px 20px rgba(0,0,0,0.13), 0 1px 3px rgba(0,0,0,0.07), inset 0 1px 0 rgba(255,255,255,0.6)',
+                    }}
+                    onMouseEnter={e => {
+                      (e.currentTarget as HTMLElement).style.boxShadow = '8px 20px 48px rgba(0,0,0,0.22), 0 2px 6px rgba(0,0,0,0.10), inset 0 1px 0 rgba(255,255,255,0.6)'
+                    }}
+                    onMouseLeave={e => {
+                      (e.currentTarget as HTMLElement).style.boxShadow = '4px 6px 20px rgba(0,0,0,0.13), 0 1px 3px rgba(0,0,0,0.07), inset 0 1px 0 rgba(255,255,255,0.6)'
                     }}
                   >
                     {/* Teippi */}
