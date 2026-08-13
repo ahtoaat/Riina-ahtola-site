@@ -67,9 +67,9 @@ export default function Services() {
                       boxShadow: '4px 6px 20px rgba(0,0,0,0.14), 0 1px 3px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.6)',
                     }}
                   >
-                    {/* Pin */}
+                    {/* Teippi */}
                     <div className="flex justify-center -mt-2 mb-5">
-                      <Pin color={PIN_COLORS[i]} />
+                      <div className="h-4 w-12 rounded-sm" style={{ backgroundColor: 'rgba(180,160,140,0.4)' }} />
                     </div>
 
                     <h3 className="font-serif text-2xl md:text-3xl text-charcoal-900 mb-4 leading-snug">
