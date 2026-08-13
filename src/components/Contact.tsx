@@ -41,7 +41,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
 
           {/* ── Contact form ──────────────────────────────────────────── */}
-          <Reveal direction="left">
+          <Reveal direction="left" className="h-full">
             <form onSubmit={handleSubmit} className="space-y-6" noValidate>
               <div>
                 <label htmlFor="name" className="sr-only">Nimesi</label>
@@ -103,11 +103,11 @@ export default function Contact() {
           </Reveal>
 
           {/* ── Sidebar: kuva, Y-tunnus, some-linkit ─────────────────── */}
-          <Reveal direction="right" delay={150}>
-            <div className="flex flex-col gap-8">
+          <Reveal direction="right" delay={150} className="h-full">
+            <div className="flex flex-col h-full gap-6">
 
-              {/* Kuva */}
-              <div className="relative w-full aspect-[4/3] overflow-hidden">
+              {/* Kuva — täyttää loput tilasta */}
+              <div className="relative flex-1 min-h-[200px] overflow-hidden">
                 <Image
                   src={sidebar.imageSrc}
                   alt={sidebar.imageAlt}
@@ -124,7 +124,6 @@ export default function Contact() {
 
               {/* Some-ikonit */}
               <div className="flex items-center gap-6">
-                {/* Instagram */}
                 <a
                   href={sidebar.instagramUrl}
                   target="_blank"
@@ -139,7 +138,6 @@ export default function Contact() {
                   </svg>
                 </a>
 
-                {/* LinkedIn */}
                 <a
                   href={sidebar.linkedinUrl}
                   target="_blank"
