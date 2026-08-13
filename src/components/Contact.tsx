@@ -38,10 +38,10 @@ export default function Contact() {
           ) : null}
         </Reveal>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
 
           {/* ── Contact form ──────────────────────────────────────────── */}
-          <Reveal direction="left" className="h-full">
+          <Reveal direction="left">
             <form onSubmit={handleSubmit} className="space-y-6" noValidate>
               <div>
                 <label htmlFor="name" className="sr-only">Nimesi</label>
@@ -103,11 +103,11 @@ export default function Contact() {
           </Reveal>
 
           {/* ── Sidebar: kuva, Y-tunnus, some-linkit ─────────────────── */}
-          <Reveal direction="right" delay={150} className="h-full">
-            <div className="flex flex-col h-full gap-6">
+          <Reveal direction="right" delay={150}>
+            <div className="flex flex-col gap-6">
 
-              {/* Kuva — täyttää loput tilasta */}
-              <div className="relative flex-1 min-h-[480px] overflow-hidden">
+              {/* Kuva — pystysuora */}
+              <div className="relative w-full aspect-[3/4] overflow-hidden">
                 <Image
                   src={sidebar.imageSrc}
                   alt={sidebar.imageAlt}
