@@ -107,7 +107,7 @@ export default function Contact() {
             <div className="flex flex-col h-full gap-6">
 
               {/* Kuva — täyttää loput tilasta */}
-              <div className="relative flex-1 min-h-[200px] overflow-hidden">
+              <div className="relative flex-1 min-h-[480px] overflow-hidden">
                 <Image
                   src={sidebar.imageSrc}
                   alt={sidebar.imageAlt}
