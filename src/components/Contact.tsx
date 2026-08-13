@@ -116,7 +116,7 @@ export default function Contact() {
                 alt={sidebar.imageAlt}
                 width={600}
                 height={800}
-                className="w-full h-auto"
+                className="w-auto max-h-[380px] object-contain"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
 
