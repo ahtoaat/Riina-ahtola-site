@@ -2,7 +2,7 @@ import Navigation       from '@/components/Navigation'
 import Hero             from '@/components/Hero'
 import About            from '@/components/About'
 import PortfolioPreview from '@/components/PortfolioPreview'
-import Portfolio        from '@/components/Portfolio'
+import Book             from '@/components/Book'
 import Contact          from '@/components/Contact'
 import Footer           from '@/components/Footer'
 
@@ -13,7 +13,7 @@ export default function Home() {
       <Hero />
       <About />
       <PortfolioPreview />
-      <Portfolio />
+      <Book />
       <Contact />
       <Footer />
     </main>

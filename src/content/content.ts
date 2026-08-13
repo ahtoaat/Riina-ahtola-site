@@ -18,9 +18,9 @@ export const siteContent = {
   nav: {
     logo:  'Riina Ahtola',
     links: [
-      { label: 'Portfolio', href: '#portfolio' },
-      { label: 'Lisää minusta',  href: '#about'     },
-      { label: 'Ota yhteyttä',   href: '#contact'   },
+      { label: 'Lisää minusta',  href: '#about'   },
+      { label: 'Idylli',         href: '#book'    },
+      { label: 'Ota yhteyttä',   href: '#contact' },
     ],
   },
 
@@ -149,6 +149,20 @@ export const siteContent = {
       messagePlaceholder: 'Kerro projektistasi…',
       submitLabel:        'Lähetä viesti',
     },
+  },
+
+  // ── Book ─────────────────────────────────────────────────────────────────
+  book: {
+    eyebrow:  'Kirja',
+    title:    'Idylli',
+    subtitle: 'Riinan kirjoittama kirja',
+    // Edit the paragraphs below to describe the book
+    paragraphs: [
+      'Idylli on Riina Ahtolan kirjoittama kirja, joka vie lukijansa kauniiden kotien ja sisustuksen maailmaan.',
+      'Kirja tarjoaa inspiraatiota ja käytännön vinkkejä ajattoman kodin luomiseen pohjoismaisessa hengessä.',
+    ],
+    // Update these when the book is available for purchase
+    cta: { label: 'Lue lisää', href: '#contact' },
   },
 
   // ── Footer ────────────────────────────────────────────────────────────────
