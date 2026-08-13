@@ -18,9 +18,11 @@ export const siteContent = {
   nav: {
     logo:  'Riina Ahtola',
     links: [
-      { label: 'Lisää minusta',  href: '#about'   },
-      { label: 'Idylli',         href: '#book'    },
-      { label: 'Ota yhteyttä',   href: '#contact' },
+      { label: 'Minä',               href: '#about'    },
+      { label: 'Kurkistus studioon', href: '#studio'   },
+      { label: 'Palveluni',          href: '#services' },
+      { label: 'Kirjailijana',       href: '#book'     },
+      { label: 'Ota yhteyttä',       href: '#contact'  },
     ],
   },
 
@@ -114,7 +116,7 @@ export const siteContent = {
 
   // ── About ─────────────────────────────────────────────────────────────────
   about: {
-    eyebrow: 'Lisää minusta',
+    eyebrow: 'Minä',
     title:   'Sisustusta\njolla on merkitys',
     // Image: replace /public/images/riina kuva.jpg with your portrait
     imageSrc: '/images/riina kuva.jpg',
@@ -151,6 +153,32 @@ export const siteContent = {
       messagePlaceholder: 'Kerro projektistasi…',
       submitLabel:        'Lähetä viesti',
     },
+  },
+
+  // ── Services ─────────────────────────────────────────────────────────────
+  services: {
+    eyebrow:  'Palveluni',
+    title:    'Mitä teen',
+    subtitle: 'Monipuolinen osaamiseni kattaa sisustussuunnittelun, kaupallisen stailauksen, televisiotuotannot ja alan koulutuksen.',
+    items: [
+      {
+        title:       'Sisustussuunnittelu',
+        description: 'Kokonaisvaltaista sisustussuunnittelua koteihin ja toimitiloihin. Suunnittelen tiloja, jotka heijastavat asukkaansa persoonaa ja tuntuvat aidosti omilta.',
+      },
+      {
+        title:       'Kaupallinen stailaus',
+        description: 'Stailaus lehtikuvauksiin, mainoksiin ja digitaalisiin medioihin. Pitkä kokemus visuaalisten kokonaisuuksien rakentamisesta ammattilaistuotantoihin.',
+      },
+      {
+        title:       'Televisio & media',
+        description: 'Sisustuskoordinaattori, -vastaava ja sisustusstailaaja useissa tv-tuotannoissa. Remppa vai muutto, Huvila ja Huussi sekä Pientä pintaremonttia.',
+      },
+      {
+        title:       'Koulutus',
+        description: 'Koulutan uusia tekijöitä sisustusalalle. Jakaan käytännön osaamista, alan tuntemusta ja näkemystä siitä, mitä ammattimaisessa sisustussuunnittelussa vaaditaan.',
+      },
+    ],
+    cta: { label: 'Ota yhteyttä', href: '#contact' },
   },
 
   // ── Book ─────────────────────────────────────────────────────────────────
