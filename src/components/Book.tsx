@@ -7,8 +7,8 @@ import Reveal from '@/components/Reveal'
 
 // Kuvat: lisää /public/images/idylli1.jpg ja /public/images/idylli2.jpg
 const IMAGES = [
-  { src: '/images/idylli1.jpg', alt: 'Idylli — Riina Ahtola' },
-  { src: '/images/idylli2.jpg', alt: 'Idylli — Riina Ahtola' },
+  { src: '/images/idylli1.webp', alt: 'Idylli — Riina Ahtola' },
+  { src: '/images/idylli2.webp', alt: 'Idylli — Riina Ahtola' },
 ]
 
 function BookSlider() {
