@@ -68,21 +68,6 @@ export default function Hero() {
               <span className="absolute inset-0 bg-charcoal-800 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-premium" />
               <span className="relative">{cta.primary.label}</span>
             </button>
-
-            <button
-              onClick={() => document.querySelector(cta.secondary.href)?.scrollIntoView({ behavior: 'smooth' })}
-              className="group relative px-8 py-4 border border-warm-white/60 text-warm-white font-sans text-sm tracking-widest uppercase overflow-hidden"
-            >
-              <span className="absolute inset-0 bg-warm-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-premium" />
-              <span className="relative">{cta.secondary.label}</span>
-            </button>
-
-            <button
-              onClick={() => document.querySelector(cta.tertiary.href)?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-8 py-4 text-warm-white/80 font-sans text-sm tracking-widest uppercase hover:text-warm-white transition-colors duration-300 underline underline-offset-4 decoration-warm-white/40"
-            >
-              {cta.tertiary.label}
-            </button>
           </div>
         </div>
 
