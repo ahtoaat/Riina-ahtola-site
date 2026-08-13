@@ -1,5 +1,56 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import { siteContent } from '@/content/content'
 import Reveal from '@/components/Reveal'
+
+// Kuvat: lisää /public/images/idylli1.jpg ja /public/images/idylli2.jpg
+const IMAGES = [
+  { src: '/images/idylli1.jpg', alt: 'Idylli — Riina Ahtola' },
+  { src: '/images/idylli2.jpg', alt: 'Idylli — Riina Ahtola' },
+]
+
+function BookSlider() {
+  const [current, setCurrent] = useState(0)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((i) => (i + 1) % IMAGES.length)
+    }, 3000)
+    return () => clearInterval(timer)
+  }, [])
+
+  return (
+    <div className="aspect-[3/4] relative overflow-hidden">
+      {IMAGES.map((img, i) => (
+        <Image
+          key={img.src}
+          src={img.src}
+          alt={img.alt}
+          fill
+          className="object-cover transition-opacity duration-1000"
+          style={{ opacity: i === current ? 1 : 0 }}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+        />
+      ))}
+
+      {/* Piste-indikaattorit */}
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+        {IMAGES.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            aria-label={`Kuva ${i + 1}`}
+            className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+              i === current ? 'bg-warm-white w-4' : 'bg-warm-white/50'
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
 
 export default function Book() {
   const { eyebrow, title, subtitle, paragraphs, cta } = siteContent.book
@@ -9,18 +60,9 @@ export default function Book() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
-          {/* ── Book cover placeholder ─────────────────────────────────── */}
-          {/* Add a book cover image to /public/images/idylli.jpg when available */}
+          {/* ── Vaihtuva kirjakansikuva ────────────────────────────────── */}
           <Reveal direction="left">
-            <div className="aspect-[3/4] relative overflow-hidden bg-sand-200 flex items-center justify-center">
-              <div className="text-center px-10">
-                <p className="font-sans text-xs tracking-widest2 uppercase text-accent mb-4">Kirja</p>
-                <p className="font-serif text-5xl text-charcoal-900 mb-3">Idylli</p>
-                <p className="font-sans text-sm text-charcoal-700/60 tracking-widest uppercase">Riina Ahtola</p>
-              </div>
-              {/* Replace the div above with an Image component when you have the cover:
-              <Image src="/images/idylli.jpg" alt="Idylli — Riina Ahtola" fill className="object-cover" /> */}
-            </div>
+            <BookSlider />
           </Reveal>
 
           {/* ── Text content ───────────────────────────────────────────── */}
