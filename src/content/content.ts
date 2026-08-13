@@ -8,10 +8,10 @@ export const siteContent = {
   // ── Meta / SEO ────────────────────────────────────────────────────────────
   meta: {
     businessName: 'Riina Ahtola',
-    tagline:      'Sisustussuunnittelija',
-    description:  'Riina Ahtola Sisustustoimittaja, -suunnittelija, -tuottaja.',
-    locale:       'en_FI',
-    siteUrl:      'https://riinaahtoladesign.fi', // update after deployment
+    tagline:      'Sisustussuunnittelija & Sisustustoimittaja',
+    description:  'Riina Ahtola on helsinkiläinen sisustussuunnittelija, sisustustoimittaja ja TV-sisustaja. Tunnettu Remppa vai muutto, Huvila ja Huussi sekä Pientä pintaremonttia -ohjelmista. Kaupallinen stailaus, sisustuskoulutus ja sisustussuunnittelu.',
+    locale:       'fi_FI',
+    siteUrl:      'https://riinaahtoladesign.fi',
   },
 
   // ── Navigation ───────────────────────────────────────────────────────────
@@ -116,13 +116,15 @@ export const siteContent = {
   about: {
     eyebrow: 'Lisää minusta',
     title:   'Sisustusta\njolla on merkitys',
-    // Image: replace /public/images/about.jpg with your portrait
+    // Image: replace /public/images/riina kuva.jpg with your portrait
     imageSrc: '/images/riina kuva.jpg',
-    imageAlt: 'Riina Ahtola, Sisustussuunnittelija',
+    imageAlt: 'Riina Ahtola — sisustussuunnittelija, sisustustoimittaja ja TV-sisustaja, Helsinki',
     paragraphs: [
-      'Olen Riina Ahtola — helsinkiläinen sisustussuunnittelija, jolla on yli kymmenen vuoden kokemus tilojen muotoilusta kauneuden ja arjen tasapainossa.',
-      'Työni ammentaa pohjoismaisesta suunnitteluperinteestä: harkitusta minimalistisuudesta, luonnonmateriaaleista ja valosta. Uskon, että hyvin suunniteltu tila tuntuu vaivattomalta — kuin se ei voisi olla muunlainen.',
-      'Kokonaisvaltaisista remonttisuunnitelmista tarkemmin rajattuihin stailaustehtäviin — teen tiivistä yhteistyötä jokaisen asiakkaan kanssa, jotta visio muuttuu tilaksi, joka on kiistattomasti heidän omansa.',
+      'Olen Riina Ahtola — helsinkiläinen sisustussuunnittelija ja sisustustoimittaja, jonka työ kattaa sisustussuunnittelun, kaupallisen stailauksen, television ja koulutuksen. Minulla on yli kymmenen vuoden kokemus tilojen ja visuaalisten kokonaisuuksien rakentamisesta.',
+      'Sisustussuunnittelun rinnalla teen kaupallista stailausta moniin medioihin — lehtikuvauksiin, mainoksiin ja digitaalisiin julkaisuihin. Toimitan sisältöjä ja koulutan uusia tekijöitä alalle.',
+      'Televisiossa olen toiminut sisustuskoordinaattorina ja sisustusvastaavana useissa tuotannoissa. Remppa vai muutto Suomi -ohjelmassa olin mukana kolmella kaudella sisustusvastaavana, sisustusstailaajana ja myös kameroiden edessä. Huvila ja Huussi -ohjelmassa toimin sisustuskoordinaattorina ja stailaajana.',
+      'Viimeisimpänä olen ollut isosti esillä Pientä pintaremonttia -ohjelmassa sisustussuunnittelijana kameroiden edessä. Televisiotyö on antanut minulle ainutlaatuisen kyvyn lukea tiloja nopeasti ja löytää ratkaisut, jotka toimivat sekä arjessa että kuvassa.',
+      'Työni kaikissa muodoissa ohjaa sama ajatus: tilan tulee tuntua oikealta juuri sille ihmiselle, joka siinä elää tai työskentelee.',
     ],
     credentials: [
       { label: 'Sijainti',    value: 'Helsinki, Suomi' },
