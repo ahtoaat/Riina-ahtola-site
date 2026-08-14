@@ -30,7 +30,7 @@ export default function PortfolioPreview() {
 
         {/* Asymmetric editorial collage */}
         <Reveal delay={150} direction="scale">
-          <div className="grid grid-cols-12 grid-rows-2 gap-3 h-[600px] md:h-[900px] lg:h-[1100px]">
+          <div className="grid grid-cols-12 grid-rows-2 gap-3 h-[600px] md:h-[700px] lg:h-[800px]">
 
             {/* Large left image — col 1-5, rows 1-2 */}
             <div className="col-span-12 md:col-span-5 row-span-2 relative overflow-hidden group">
