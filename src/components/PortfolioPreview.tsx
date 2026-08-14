@@ -8,7 +8,7 @@ export default function PortfolioPreview() {
   const { eyebrow, title, images } = siteContent.portfolioPreview
 
   return (
-    <section id="studio" className="bg-warm-white py-24 lg:py-32 px-6 lg:px-10">
+    <section id="studio" className="bg-warm-white py-16 lg:py-24 px-6 lg:px-10">
       <div className="max-w-7xl mx-auto">
 
         {/* Section header */}
