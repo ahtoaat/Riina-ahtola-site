@@ -84,19 +84,6 @@ export default function About() {
                 aria-hidden="true"
               />
 
-              {/* Credential card overlapping image corner */}
-              <div className="absolute bottom-8 -right-4 bg-warm-white p-6 shadow-lg max-w-[200px]">
-                {credentials.map((c) => (
-                  <div key={c.label} className="mb-4 last:mb-0">
-                    <p className="font-sans text-xs tracking-widest2 uppercase text-accent mb-0.5">
-                      {c.label}
-                    </p>
-                    <p className="font-serif text-xl text-charcoal-900">
-                      <AnimatedStat value={c.value} />
-                    </p>
-                  </div>
-                ))}
-              </div>
             </div>
           </Reveal>
 
