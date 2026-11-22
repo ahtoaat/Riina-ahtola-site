@@ -122,7 +122,6 @@ export const siteContent = {
     imageSrc: '/images/riina kuva.jpg',
     imageAlt: 'Riina Ahtola — sisustussuunnittelija, sisustustoimittaja ja TV-sisustaja, Helsinki',
     paragraphs: [
-    paragraphs: [
       { text: 'Rakastan vanhoja rakennuksia, rosoisia pintoja ja taitavaa esineiden yhdistelemistä, missä tarinat kohtaavat uuden ja vanhan kanssa sopuisasti. Inspiroidun persoonallisista ihmisistä, vuodenaikojen mukaan vaihtelevasta luonnosta ja yllätyksellisistä tiloista. Kaiken tämän ympäristöstä keräämäni inspiraation hyödynnän suunnittelutyössäni, tekstiä kirjoittaessani tai ihmisjoukolle esiintyessäni.' },
       { text: 'Olen Riina Ahtola, sisustus- ja media-alan multitaskaaja. Suunnittelen mielelläni kotiisi uuden ilmeen, on sitten kyseessä pieni tarve ehostaa pintoja tai muuttaa isommin kodin toiminnallisuutta ja tilaratkaisuja.' },
       { text: 'Työurani on rakentunut monipuolisesti visuaalisen alan ympärille. Olen tehnyt freelancerina sisututoimittajan töitä jo yli kymmenen vuoden ajan, ja lisäksi työskentelen kaupallisen stailauksen parissa eri medioissa, kuten erilaisissa tapahtumissa, mainoksissa ja televisiossa. Stailaus, eli mielestäni paremmin sanottuna tilojen ja sisustuksen viimeistely, on ollut minulle aina intohimo ja siksi myös jaan oppejani tuleville alan taitajille.',
