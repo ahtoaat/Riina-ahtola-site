@@ -29,7 +29,7 @@ export const siteContent = {
   // ── Hero ─────────────────────────────────────────────────────────────────
   hero: {
     // Image: replace /public/images/hero.jpg with your own photo
-    imageSrc: '/images/Virtasen maali, Munkkiniemi.jpg',
+    imageSrc: '/images/abstrakti ruosteinen metallipinta.png',
     imageAlt: 'Riina Ahtola — Sisustussuunnittelija',
     eyebrow:  '.',
     title:    'Tiloja jotka\ntuntuvat kodilta',
