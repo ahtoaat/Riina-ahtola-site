@@ -129,7 +129,7 @@ export const siteContent = {
       { text: 'Luon kauniita ja ihmisen näköisiä sisustuksia ja välillä otan kynän käteeni ja muodostan ympärillä olevasta kauneudesta tekstiä. Kirjoittamiani kotijuttuja voi lukea useimmista kotimaisista sisustuslehdistä.',
         link: { label: 'Esikoiskirja — Idylli', href: 'https://www.bemycozy.com/product/idylli-maaseutukoteja/' } },
       { text: 'Olen Sisustustoimittajat ry jäsen ja puheenjohtaja. Näen asiat positiivisen kautta ja vaikka otankin jokaisen työprojektin vastaan vakavasti, teen sen silti aina hymyssä suin.',
-        link: { label: 'Sisustustoimittajat ry', href: 'https://sisustutoimittajat.fi/riina-ahtola/' } },
+        link: { label: 'Sisustustoimittajat ry', href: 'https://sisututoimittajat.fi/riina-ahtola/' } },
     ],
     credentials: [
       { label: 'Sijainti',    value: 'Helsinki' },
