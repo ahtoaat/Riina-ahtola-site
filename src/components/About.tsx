@@ -52,8 +52,10 @@ function AnimatedStat({ value }: { value: string }) {
 }
 
 export default function About() {
-  const { eyebrow, title, imageSrc, imageAlt, paragraphs, links, credentials, cta } =
-    siteContent.about as typeof siteContent.about & { links?: { label: string; href: string }[] }
+  const { eyebrow, title, imageSrc, imageAlt, paragraphs, credentials, cta } =
+    siteContent.about as typeof siteContent.about & {
+      paragraphs: { text: string; link?: { label: string; href: string } }[]
+    }
 
   return (
     <section id="about" className="bg-warm-white py-16 lg:py-24 px-6 lg:px-10">
@@ -118,33 +120,25 @@ export default function About() {
               {paragraphs.map((para, i) => (
                 <Reveal key={i} delay={300 + i * 100}>
                   <p className="font-sans text-base text-charcoal-700 leading-relaxed">
-                    {para}
+                    {para.text}
                   </p>
+                  {para.link && (
+                    <a
+                      href={para.link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2 inline-flex items-center gap-3 font-sans text-sm tracking-widest uppercase text-charcoal-900 hover:text-accent transition-colors duration-300 group w-fit"
+                    >
+                      <span className="block h-px w-4 bg-current transition-all duration-500 group-hover:w-8" />
+                      {para.link.label}
+                    </a>
+                  )}
                 </Reveal>
               ))}
             </div>
 
             <Reveal delay={500}>
               <div className="h-px bg-sand-200 mb-8" />
-
-              {/* Linkkinapit */}
-              {links && links.length > 0 && (
-                <div className="flex flex-col gap-3 mb-8">
-                  {links.map((link, i) => (
-                    <a
-                      key={i}
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-3 font-sans text-sm tracking-widest uppercase text-charcoal-900 hover:text-accent transition-colors duration-300 group w-fit"
-                    >
-                      <span className="block h-px w-4 bg-current transition-all duration-500 group-hover:w-8" />
-                      {link.label}
-                    </a>
-                  ))}
-                </div>
-              )}
-
               <button
                 onClick={() => document.querySelector(cta.href)?.scrollIntoView({ behavior: 'smooth' })}
                 className="inline-flex items-center gap-3 font-sans text-sm tracking-widest uppercase text-charcoal-900 hover:text-accent transition-colors duration-300 group"
