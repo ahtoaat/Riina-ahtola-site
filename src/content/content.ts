@@ -127,7 +127,7 @@ export const siteContent = {
       { text: 'Työurani on rakentunut monipuolisesti visuaalisen alan ympärille. Olen tehnyt freelancerina sisututoimittajan töitä jo yli kymmenen vuoden ajan, ja lisäksi työskentelen kaupallisen stailauksen parissa eri medioissa, kuten erilaisissa tapahtumissa, mainoksissa ja televisiossa. Stailaus, eli mielestäni paremmin sanottuna tilojen ja sisustuksen viimeistely, on ollut minulle aina intohimo ja siksi myös jaan oppejani tuleville alan taitajille.',
         link: { label: 'Katso esittelyni opettajana', href: 'https://www.ajk-jatkokoulutus.fi/kouluttajat/' } },
       { text: 'Luon kauniita ja ihmisen näköisiä sisustuksia ja välillä otan kynän käteeni ja muodostan ympärillä olevasta kauneudesta tekstiä. Kirjoittamiani kotijuttuja voi lukea useimmista kotimaisista sisustuslehdistä.',
-        link: { label: 'Esikoiskirja — Idylli', href: 'https://www.bemycozy.com/product/idylli-maaseutokoteja/' } },
+        link: { label: 'Esikoiskirja — Idylli', href: 'https://www.bemycozy.com/product/idylli-maaseutukoteja/' } },
       { text: 'Olen Sisututoimittajat ry jäsen ja puheenjohtaja. Näen asiat positiivisen kautta ja vaikka otankin jokaisen työprojektin vastaan vakavasti, teen sen silti aina hymyssä suin.',
         link: { label: 'Sisututoimittajat ry', href: 'https://sisututoimittajat.fi/riina-ahtola/' } },
     ],
