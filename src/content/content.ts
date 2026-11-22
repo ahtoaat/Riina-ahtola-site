@@ -49,9 +49,9 @@ export const siteContent = {
     images: [
       { src: '/images/kattaus 1.jpg', alt: 'Olohuone — puhtaat skandinaaviset linjat' },
       { src: '/images/kattaus 2.jpg', alt: 'Makuuhuone — lämpimät neutraalit sävyt'  },
-      { src: '/images/portfolio3.jpg', alt: 'Keittiö — minimalistinen kaapisto'       },
-      { src: '/images/portfolio4.jpg', alt: 'Ruokailutila — luonnonmateriaalit'       },
-      { src: '/images/portfolio5.jpg', alt: 'Kotitoimisto — rauhallinen ja toimiva'   },
+      { src: '/images/Keittiö Museokatu 1.JPG', alt: 'Keittiö Museokatu'    },
+      { src: '/images/Vallila lastenhuone.jpg', alt: 'Vallila lastenhuone'  },
+      { src: '/images/Suomenlinna 2..jpg',      alt: 'Suomenlinna'          },
       { src: '/images/portfolio6.jpg', alt: 'Eteinen — valon ja varjon leikki'        },
     ],
   },
